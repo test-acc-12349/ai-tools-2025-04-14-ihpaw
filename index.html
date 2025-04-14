@@ -1,5 +1,14 @@
+
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html class="dark" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enhanced Directory Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +16,53 @@
     <meta name="description" content="Discover the best AI tools for writing, SEO, automation, and more.">
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body class="bg-gray-900 text-gray-100 font-inter antialiased">
     <header class="fixed w-full bg-gray-900/95 backdrop-blur-sm z-50 border-b border-gray-800">
         <nav class="container mx-auto px-6 py-4">
             <div class="flex items-center justify-between">
-                <a href="#" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">AI Tools</a>
-                <button class="lg:hidden">
-                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path></svg>
+                <a href="https://test-acc-12349.github.io/ai-tools-2025-04-14-ihpaw/" class="text-2xl font-bold bg-gradient-to-r from-purple-500 to-pink-500 bg-clip-text text-transparent">AI Tools</a>
+                <button class="mobile-menu-button md:hidden" aria-label="Toggle menu">
+                    <i class="fas fa-bars text-2xl"></i>
                 </button>
-                <div class="hidden lg:flex space-x-8">
+                <div class="hidden md:flex space-x-8">
                     <a href="#" class="hover:text-purple-400 transition-colors duration-300">Home</a>
                     <a href="#directory" class="hover:text-purple-400 transition-colors duration-300">Directory</a>
                     <a href="#about" class="hover:text-purple-400 transition-colors duration-300">About</a>
                 </div>
             </div>
+            <div class="mobile-menu hidden md:hidden mt-4 bg-gray-800 rounded-lg p-4">
+                <a href="#" class="block py-2 hover:text-purple-400 transition-colors duration-300">Home</a>
+                <a href="#directory" class="block py-2 hover:text-purple-400 transition-colors duration-300">Directory</a>
+                <a href="#about" class="block py-2 hover:text-purple-400 transition-colors duration-300">About</a>
+            </div>
         </nav>
     </header>
 
-    <section class="relative h-[50vh] flex items-center justify-center bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900">
-        <div class="absolute inset-0 opacity-20 bg-grid-pattern"></div>
+    <section class="relative h-[50vh] flex items-center justify-center bg-gradient-to-br from-gray-900 via-purple-900 to-gray-900" style="background-image: url('https://images.unsplash.com/photo-1620121692029-d088224ddc74?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'); background-blend-mode: overlay; background-size: cover;">
+        <div class="absolute inset-0 bg-black opacity-60"></div>
         <div class="container mx-auto px-6 text-center relative z-10">
-            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">AI Tools</h1>
-            <p class="text-xl md:text-2xl mb-8 text-gray-300">Get the ultimate AI Tools</p>
-            <a href="https://aitools.com" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">Explore Tools</a>
+            <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">AI Tools Directory</h1>
+            <p class="text-xl md:text-2xl mb-8 text-gray-200">Discover the most powerful AI tools to transform your workflow</p>
+            <a href="#directory" class="inline-block bg-gradient-to-r from-purple-500 to-pink-500 text-white font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-purple-500/25">Explore Tools</a>
+        </div>
+    </section>
+
+    
+
+    <section class="py-20 bg-gradient-to-r from-purple-900 to-gray-900" style="background-image: url('https://images.unsplash.com/photo-1620121684840-edffcfc4b878?ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80'); background-blend-mode: overlay; background-size: cover;">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-8">Submit Your AI Tool</h2>
+            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Join our exclusive directory of premium AI tools and connect with thousands of potential users looking for solutions like yours.</p>
+            <a href="#" class="inline-block bg-white text-gray-900 font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-white/25">Submit Your Tool</a>
+        </div>
+    </section>
+
+    <section id="about" class="py-20 px-6">
+        <div class="container mx-auto max-w-3xl text-center">
+            <h2 class="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">About Us</h2>
+            <p class="text-gray-300 leading-relaxed">Welcome to AI Tools, your premier destination for discovering cutting-edge artificial intelligence solutions. We carefully curate and showcase the most innovative AI tools available today, helping professionals and businesses harness the power of artificial intelligence to streamline their workflows, boost productivity, and achieve better results.</p>
         </div>
     </section>
 
@@ -70,24 +102,7 @@
                 </div>
             </div>
         </div>
-    </section>
-
-    <section class="py-20 bg-gradient-to-r from-purple-900 to-gray-900">
-        <div class="container mx-auto px-6 text-center">
-            <h2 class="text-3xl md:text-4xl font-bold mb-8">Submit Your AI Tool</h2>
-            <p class="text-xl text-gray-300 mb-8 max-w-2xl mx-auto">Join our curated collection of premium AI tools and reach thousands of potential users.</p>
-            <a href="https://aitools.com" class="inline-block bg-white text-gray-900 font-semibold px-8 py-4 rounded-lg transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-white/25">Submit Listing</a>
-        </div>
-    </section>
-
-    <section id="about" class="py-20 px-6">
-        <div class="container mx-auto max-w-3xl text-center">
-            <h2 class="text-3xl font-bold mb-8 bg-gradient-to-r from-purple-400 to-pink-400 bg-clip-text text-transparent">About Us</h2>
-            <p class="text-gray-300 leading-relaxed">Welcome to AI Tools, your premier destination for discovering cutting-edge artificial intelligence solutions. We carefully curate and showcase the most innovative AI tools available today, helping professionals and businesses harness the power of artificial intelligence to streamline their workflows, boost productivity, and achieve better results.</p>
-        </div>
-    </section>
-
-    <footer class="bg-gray-800 py-12 px-6">
+    </section><footer class="bg-gray-800 py-12 px-6">
         <div class="container mx-auto">
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
                 <div>
@@ -101,15 +116,16 @@
                 <div>
                     <h4 class="text-lg font-medium mb-4">Legal</h4>
                     <div class="space-y-2">
-                        <a href="#" class="block text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
-                        <a href="#" class="block text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        <a href="https://test-acc-12349.github.io/ai-tools-2025-04-14-ihpaw/privacy.html" class="block text-gray-400 hover:text-white transition-colors duration-300">Privacy Policy</a>
+                        <a href="https://test-acc-12349.github.io/ai-tools-2025-04-14-ihpaw/terms.html" class="block text-gray-400 hover:text-white transition-colors duration-300">Terms of Service</a>
+                        <a href="https://test-acc-12349.github.io/ai-tools-2025-04-14-ihpaw/blog.html" class="block text-gray-400 hover:text-white transition-colors duration-300">Blog</a>
                     </div>
                 </div>
                 <div>
                     <h4 class="text-lg font-medium mb-4">Follow Us</h4>
                     <div class="flex space-x-4">
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">Twitter</a>
-                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300">LinkedIn</a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white transition-colors duration-300"><i class="fab fa-linkedin"></i></a>
                     </div>
                 </div>
             </div>
@@ -118,5 +134,36 @@
             </div>
         </div>
     </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuButton = document.querySelector('header nav .mobile-menu-button');
+            const mobileMenu = document.querySelector('header nav .mobile-menu');
+           
+            if (mobileMenuButton && mobileMenu) {
+                mobileMenuButton.addEventListener('click', () => {
+                    mobileMenu.classList.toggle('hidden');
+                    const icon = mobileMenuButton.querySelector('i');
+                    if (icon) {
+                        icon.classList.toggle('fa-bars');
+                        icon.classList.toggle('fa-times');
+                    }
+                });
+
+                const mobileMenuLinks = mobileMenu.querySelectorAll('a');
+                mobileMenuLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        mobileMenu.classList.add('hidden');
+                        const icon = mobileMenuButton.querySelector('i');
+                        if (icon) {
+                            icon.classList.remove('fa-times');
+                            icon.classList.add('fa-bars');
+                        }
+                    });
+                });
+            }
+        });
+    </script>
+</body>
 </body>
 </html>
